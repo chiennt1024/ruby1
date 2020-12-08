@@ -12,3 +12,4 @@ puts $sum
 #bt3 Điểm khác biệt giữa 1 and "1"? 1 la number "1" la string
 
 #bt4  Cho các phần tử từ 0 tới 10. In ra các phần tử chẵn(sử dụng  hàm step)
+(0..10).step(2).to_a.map{|num| puts num}
