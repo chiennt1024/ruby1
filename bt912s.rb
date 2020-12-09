@@ -39,3 +39,15 @@ a.uniq
 #VD: "Cat vị trí số 1"
 animals = ["cat", "dog", "tiger"]
 animals.each_with_index{|val, index| puts "#{val.capitalize} vi tri so #{index + 1}"}
+#Extra
+arr = [1,2,3,4,5,1,2,3,1,2,1]
+hsh = {}
+
+arr.each{|val| 
+  if hsh[val] == nil
+    hsh.store val, 1
+  else
+    hsh.store val, hsh[val] + 1
+  end
+    }
+puts hsh
